@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="不动点定理," />
 
 
 
@@ -87,17 +87,18 @@
 
 
 
-<meta name="description" content="分析学： 一开始要 Rosenlicht 的 Introduction to analysis 和 Binmore 的 Mathematical analysis: a straightforword approach （说不定还需要看一下 Schaum’s outline 或者先从 easy outline 开始）做启蒙读物；然后是 Abbott 的 Understanding analysi">
+<meta name="description" content="Brouwer适用于函数,Kakutani适用于一般意义上的对应,这种对应又称为「集值函数」。 「对应」 $C:X\Rightarrow Y$，取值为$Y$的某子集。也可视为函数$F:X\rightarrow\mathcal{P}(Y)$，其中$\mathcal{P}Y)$为$Y$的幂集。 ［引理］ 若$X=A\cup B$（但不要求$A\cap B=\varnothing$），$f:A\righ">
+<meta name="keywords" content="不动点定理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如果我们可以重新来过">
-<meta property="og:url" content="http://yoursite.com/2017/07/29/如果我们可以重新来过/index.html">
+<meta property="og:title" content="不求甚解学经济 不动点定理（四）Kakutani&#39;s Fixed Point Theorem">
+<meta property="og:url" content="http://yoursite.com/2017/07/31/不求甚解学经济-不动点定理（四）Kakutani-s-Fixed-Point-Theorem/index.html">
 <meta property="og:site_name" content="不求甚解学经济">
-<meta property="og:description" content="分析学： 一开始要 Rosenlicht 的 Introduction to analysis 和 Binmore 的 Mathematical analysis: a straightforword approach （说不定还需要看一下 Schaum’s outline 或者先从 easy outline 开始）做启蒙读物；然后是 Abbott 的 Understanding analysi">
+<meta property="og:description" content="Brouwer适用于函数,Kakutani适用于一般意义上的对应,这种对应又称为「集值函数」。 「对应」 $C:X\Rightarrow Y$，取值为$Y$的某子集。也可视为函数$F:X\rightarrow\mathcal{P}(Y)$，其中$\mathcal{P}Y)$为$Y$的幂集。 ［引理］ 若$X=A\cup B$（但不要求$A\cap B=\varnothing$），$f:A\righ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-28T16:46:26.005Z">
+<meta property="og:updated_time" content="2017-08-02T15:30:18.512Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如果我们可以重新来过">
-<meta name="twitter:description" content="分析学： 一开始要 Rosenlicht 的 Introduction to analysis 和 Binmore 的 Mathematical analysis: a straightforword approach （说不定还需要看一下 Schaum’s outline 或者先从 easy outline 开始）做启蒙读物；然后是 Abbott 的 Understanding analysi">
+<meta name="twitter:title" content="不求甚解学经济 不动点定理（四）Kakutani&#39;s Fixed Point Theorem">
+<meta name="twitter:description" content="Brouwer适用于函数,Kakutani适用于一般意义上的对应,这种对应又称为「集值函数」。 「对应」 $C:X\Rightarrow Y$，取值为$Y$的某子集。也可视为函数$F:X\rightarrow\mathcal{P}(Y)$，其中$\mathcal{P}Y)$为$Y$的幂集。 ［引理］ 若$X=A\cup B$（但不要求$A\cap B=\varnothing$），$f:A\righ">
 
 
 
@@ -125,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/29/如果我们可以重新来过/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/31/不求甚解学经济-不动点定理（四）Kakutani-s-Fixed-Point-Theorem/"/>
 
 
 
 
 
-  <title> 如果我们可以重新来过 | 不求甚解学经济 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> 不求甚解学经济 不动点定理（四）Kakutani's Fixed Point Theorem | 不求甚解学经济 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -250,7 +251,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/29/如果我们可以重新来过/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/31/不求甚解学经济-不动点定理（四）Kakutani-s-Fixed-Point-Theorem/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Brandon Song Li">
@@ -271,7 +272,7 @@
             
             
               
-                如果我们可以重新来过
+                不求甚解学经济 不动点定理（四）Kakutani's Fixed Point Theorem
               
             
           </h1>
@@ -286,8 +287,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-29T00:32:05+08:00">
-                2017-07-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-31T21:36:10+08:00">
+                2017-07-31
               </time>
             
 
@@ -322,8 +323,30 @@
       
 
       
-        <h1 id="分析学">分析学：</h1>
-<p>一开始要 Rosenlicht 的 <em>Introduction to analysis</em> 和 Binmore 的 <em>Mathematical analysis: a straightforword approach</em> （说不定还需要看一下 <em>Schaum’s outline </em>或者先从 <em>easy outline</em> 开始）做启蒙读物；然后是 Abbott 的 <em>Understanding analysis</em> 做稍微提高一点的补充; 随后是 Bartle 的 <em>The elements of real analysis</em> 这种较为严肃一些的，并用 Zeitz 的 <em>The art and craft of problem solving</em> 来学习一下数学证明的内容；这时可以进入 Apostol 的 <em>Mathematical analysis</em> 或者 Strichartz 的 <em>The way of analysis</em> 这样的常用教材；之后才能到 Rudin 算是入门。 # 拓扑学： # Schaum’s outline 里的 General Topology 做启蒙读物，并做习题。</p>
+        <p>Brouwer适用于函数,Kakutani适用于一般意义上的对应,这种对应又称为「集值函数」。</p>
+<p>「对应」 $C:X\Rightarrow Y$，取值为$Y$的某子集。也可视为函数$F:X\rightarrow\mathcal{P}(Y)$，其中$\mathcal{P}Y)$为$Y$的幂集。</p>
+<p>［引理］ 若$X=A\cup B$（但不要求$A\cap B=\varnothing$），$f:A\rightarrow Y$；$g:B\rightarrow Y$；$h:X\rightarrow Y$，而$f(x)$在那些$x\in A$连续，$g(x)$在那些$x\in B$连续，且$f(x)=g(x)$当$x\in A\cap B$。定义$h(x)=f(x)$当$x\in A$；$h(x)=g(x)$当$x\in B$,<br>则$h(x)$在$X$连续。</p>
+<p>「Kakutani 不动点定理」$X$为欧氏空间中非空紧凸集，$C:X\Rightarrow Y$有闭图（即$Graph C=\left\{(x,y)\in X\times Y:y\in C(x)\right\}$为闭集），且任给$x\in X$有$C(x)$为非空闭凸集。则存在$x^{<em>}\in X$，使得$x^{</em>}\in C(x^{*})$。</p>
+<p>［证明］</p>
+<p>先在单纯形上证明。</p>
+<p>①对单纯形$\Delta$做$k$次重心剖分。将第$k$次剖分所得到的顶点们记为$V_{0}(k), V_{1}(k),…,V_{n}(k)$。</p>
+<p>②构造引理中所使用的函数$h(x)$。</p>
+<p>将顶点集合$\left\{V_{0}(k), V_{1}(k),…,V_{n}(k)\right\}$定义为引理中所需要的$A$。将$co(V_{0}(k),V_{1}(k),…V_{n}(k))$定义为引理中所需要的$B$。</p>
+<p>任选$x_{n}$，若$x_{n}\in\left\{V_{0}(k), V_{1}(k),…V_{n}(k)\right\}$，因$C(x_{n})$取值为一个集合，则从集合中任选一个$y\in C(x_{n})$，并定义$f(x_{n})=y$。因$C$为闭图，意即$Graph C=\left\{(x,y):y\in C(x)\right\}$为闭集。也就是说取序列$\left\{x_{k}\right\}_{k}$和$\left\{y_{k}\right\}_{k}$，若$x_{k}\rightarrow x$，$y_{k}\rightarrow y$，且$(x_{k},y_{k})\in Graph C$（即$y_{k}\in C(x_{k})$），则有$(x,y)\in Graph C$（即$y\in C(x)$）。因此，当$x_{k}\rightarrow x$且$y_{k}\rightarrow y$，我们定义的函数$f(x_{k})=y_{k}$满足$f(x)=y$。而这就表示$f$为连续函数。</p>
+<p>若$x_{n}\in co(V_{0}(k),V_{1}(k),…,V_{n}(k))$，则将其表示为$x_{n}=\sum_{i}θ_{j}V_{j}(k)$，亦即$x_{n}$可以表示为顶点$V_{j}(k)$们的凸组合，定义$g(x_{n})=\sum\theta_{j}g_{j}(V_{j}(k))$，而$g_{j}(V_{j}(k))=f(V_{j}(k))$。即通过将单纯形内任一点表示成顶点们的凸组合，我们便可以使用上一步中仅作用于顶点的函数$f$来表示未必是顶点的任意一个$x_{n}$，而为表示区别，此时的$f$记为$g_{j}$。而$g$是连续函数$g_{j}$的凸组合，仍然为连续函数。</p>
+<p>定义$h$为引理中所要求的样子，即：若$x\in A$则$h(x)=f(x)$，若$x\in B$则$h(x)=g(x)$。且易知若$x\in A\cap B$，则依据前述方式定义有$g(x)=f(x)$，此时这两种定义方式是一致的。</p>
+<p>故而根据Brouwer，存在$x_{n}^{<em>}$使得$x_{n}^{</em>}=h(x_{n}^{*})$。</p>
+<p>③因各$θ_{j}$在$\left[0,1\right]$中，根据<strong>Bolzano-Weierstrass定理</strong> “紧集中的实序列必有收敛子列”。取序列$\left\{θ_{j_{k}}\right\}_{k}$收敛于$θ_{j}^{*}$。其中序列的第$k$项均取自相应的第$k$次剖分。</p>
+<p>同理，各$h(V_{j})$在$△$中，可取$\left\{h_{k}(V_{j_{k}})\right\}_{k}$收敛于$y_{j^{*}}$。</p>
+<p>而当剖分细致程度越来越高，即$k\rightarrow\infty$时（为了便于理解，此处可以视之为，随着越剖越细每个小子形的面积趋近于$0$），有$\left\{V_{j_{k}}\right\}_{k}$以及$\left\{x_{k}\right\}_{k}$收敛于同一个$x^{*}$。</p>
+<p>④当每一项$(V_{j_{k}},h_{k}(V_{j_{k}}))\in Graph C$，已知C有闭图，则极限$(x^{<em>}, y_{j}^{</em>})\in Graph C$，即$y_{j}^{<em>}\in C(x^{</em>})$。</p>
+<p>而$x^{<em>}=h(x^{</em>})=\sum_{j}θ_{j}^{<em>}y_{j}^{</em>}$，其中$y_{j}^{<em>}\in C(x^{</em>})$。这就意味着$x^{<em>}\in coC(x^{</em>})$，但已知$C$为凸值的，因而$coC(x^{<em>})=C(x^{</em>})$。即得$x^{<em>}\in C(x^{</em>})$。</p>
+<p>在单纯形上得证。</p>
+<p>将其推广到一般的非空紧凸集时，步骤与Brouwer类似，暂略。$\square$</p>
+<p><em>脱胎于：</em></p>
+<p><em>Border K C. Fixed point theorems with applications to economics and game theory[M]. Cambridge university press, 1989.</em></p>
+<p><em>Ichiishi T. Game theory for economic analysis[M]. Elsevier, 2014.</em></p>
+<p><em>俞建. 博弈论与非线性分析[M]. 科学出版社, 2008.</em></p>
 
       
     </div>
@@ -351,6 +374,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/不动点定理/" rel="tag"># 不动点定理</a>
+          
+        </div>
+      
 
       
         
@@ -360,14 +389,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/29/如果我们可以重新来过/" rel="next" title="如果我们可以重新来过">
+                <i class="fa fa-chevron-left"></i> 如果我们可以重新来过
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/31/不求甚解学经济-不动点定理（四）Kakutani-s-Fixed-Point-Theorem/" rel="prev" title="不求甚解学经济 不动点定理（四）Kakutani's Fixed Point Theorem">
-                不求甚解学经济 不动点定理（四）Kakutani's Fixed Point Theorem <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/02/不求甚解学经济-不动点定理（五）樊畿不等式-ky-fan-minmax-inequality/" rel="prev" title="不求甚解学经济 不动点定理（五）樊畿不等式 Ky Fan minmax inequality">
+                不求甚解学经济 不动点定理（五）樊畿不等式 Ky Fan minmax inequality <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -415,17 +448,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -478,22 +502,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#分析学"><span class="nav-number">1.</span> <span class="nav-text">分析学：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
