@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="分析学： 一开始要 Rosenlicht 的 Introduction to analysis 和 Binmore 的 Mathematical analysis: a straightforword approach （说不定还需要看一下 Schaum’s outline 或者先从 easy outline 开始）做启蒙读物；然后是 Abbott 的 Understanding analysi">
+<meta name="description" content="序言 这一预备章节建立了在全书中会用到的一些概念和术语，并介绍了将在后文用到的集合论及分析学里各种结论。此处行文力图简练，是因为本章主要作为一个参考而存在，而并非系统化地进行介绍。 #0.1 集合论的语言 我们假设读者对于集合论的基本概念有一定的了解，而接下来的叙述主要是为了确定我们的术语。 数系 \(\mathbb N\)正整数集（不包括0） \(\mathbb Z\)整数集 \(\ma">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如果我们可以重新来过">
-<meta property="og:url" content="http://yoursite.com/2017/07/29/如果我们可以重新来过/index.html">
+<meta property="og:title" content="【翻译】Royden实分析第0章">
+<meta property="og:url" content="http://yoursite.com/2017/08/18/【翻译】Royden实分析第0章/index.html">
 <meta property="og:site_name" content="不求甚解学经济">
-<meta property="og:description" content="分析学： 一开始要 Rosenlicht 的 Introduction to analysis 和 Binmore 的 Mathematical analysis: a straightforword approach （说不定还需要看一下 Schaum’s outline 或者先从 easy outline 开始）做启蒙读物；然后是 Abbott 的 Understanding analysi">
+<meta property="og:description" content="序言 这一预备章节建立了在全书中会用到的一些概念和术语，并介绍了将在后文用到的集合论及分析学里各种结论。此处行文力图简练，是因为本章主要作为一个参考而存在，而并非系统化地进行介绍。 #0.1 集合论的语言 我们假设读者对于集合论的基本概念有一定的了解，而接下来的叙述主要是为了确定我们的术语。 数系 \(\mathbb N\)正整数集（不包括0） \(\mathbb Z\)整数集 \(\ma">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-09T13:31:56.271Z">
+<meta property="og:updated_time" content="2017-08-18T16:08:19.995Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如果我们可以重新来过">
-<meta name="twitter:description" content="分析学： 一开始要 Rosenlicht 的 Introduction to analysis 和 Binmore 的 Mathematical analysis: a straightforword approach （说不定还需要看一下 Schaum’s outline 或者先从 easy outline 开始）做启蒙读物；然后是 Abbott 的 Understanding analysi">
+<meta name="twitter:title" content="【翻译】Royden实分析第0章">
+<meta name="twitter:description" content="序言 这一预备章节建立了在全书中会用到的一些概念和术语，并介绍了将在后文用到的集合论及分析学里各种结论。此处行文力图简练，是因为本章主要作为一个参考而存在，而并非系统化地进行介绍。 #0.1 集合论的语言 我们假设读者对于集合论的基本概念有一定的了解，而接下来的叙述主要是为了确定我们的术语。 数系 \(\mathbb N\)正整数集（不包括0） \(\mathbb Z\)整数集 \(\ma">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/29/如果我们可以重新来过/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/18/【翻译】Royden实分析第0章/"/>
 
 
 
 
 
-  <title> 如果我们可以重新来过 | 不求甚解学经济 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> 【翻译】Royden实分析第0章 | 不求甚解学经济 </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -250,7 +250,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/29/如果我们可以重新来过/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/【翻译】Royden实分析第0章/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Brandon Song Li">
@@ -271,7 +271,7 @@
             
             
               
-                如果我们可以重新来过
+                【翻译】Royden实分析第0章
               
             
           </h1>
@@ -286,8 +286,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-29T00:32:05+08:00">
-                2017-07-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-18T22:14:37+08:00">
+                2017-08-18
               </time>
             
 
@@ -322,12 +322,26 @@
       
 
       
-        <h1 id="分析学">分析学：</h1>
-<p>一开始要 Rosenlicht 的 <em>Introduction to analysis</em> 和 Binmore 的 <em>Mathematical analysis: a straightforword approach</em> （说不定还需要看一下 <em>Schaum’s outline </em>或者先从 <em>easy outline</em> 开始）做启蒙读物；然后是 Abbott 的 <em>Understanding analysis</em> 做稍微提高一点的补充; 随后是 Bartle 的 <em>The elements of real analysis</em> 这种较为严肃一些的，并用 Zeitz 的 <em>The art and craft of problem solving</em> 来学习一下数学证明的内容；这时可以进入 Apostol 的 <em>Mathematical analysis</em> 这样的常用教材；之后才能到 Rudin 算是入门。</p>
-<h1 id="拓扑学">拓扑学：</h1>
-<p>Schaum’s outline 里的 General Topology 做启蒙读物，并做习题。</p>
-<h1 id="杂感">杂感：</h1>
-<p>无实分析焉概率，不经高宏怎计量。</p>
+        <h1 id="序言">序言</h1>
+<p>这一预备章节建立了在全书中会用到的一些概念和术语，并介绍了将在后文用到的集合论及分析学里各种结论。此处行文力图简练，是因为本章主要作为一个参考而存在，而并非系统化地进行介绍。 #0.1 集合论的语言 我们假设读者对于集合论的基本概念有一定的了解，而接下来的叙述主要是为了确定我们的术语。</p>
+<p><strong>数系</strong> <span class="math inline">\(\mathbb N\)</span>正整数集（不包括0）</p>
+<p><span class="math inline">\(\mathbb Z\)</span>整数集</p>
+<p><span class="math inline">\(\mathbb Q\)</span>比例数（有理数）集</p>
+<p><span class="math inline">\(\mathbb R\)</span>实数集</p>
+<p><span class="math inline">\(\mathbb C\)</span>复数集</p>
+<p><strong>逻辑</strong></p>
+<p>我们避免使用数理逻辑里的专门用语，而尽量与日常用语保持一致。但仍然使用iff来表示if and only if（即：当且仅当）。</p>
+<p>基本逻辑中一个常不为学生充分理解之处是：如果A、B为两个数学断言而-A、-B分别表示其否定，则“A蕴涵B”等价于其逆否命题“-B蕴涵-A”（即“非B蕴涵非A”）。因此我们可以通过假定非B而加以演绎以推断出非A来证明“A蕴涵B”，这也是我们常使用的做法。<strong>但逆否证明与反证法不是一回事</strong>，反证法同时假定A和非B并经过演绎而得出矛盾。</p>
+<p><strong>集合</strong></p>
+<p>“family”与“collection”与“set”将互为同义使用，（译为集族、集类等），以避免“集合们的集合”这种说法。空集以<span class="math inline">\(\varnothing\)</span>表示，X的所有子集构成的集族以<span class="math inline">\(\mathscr{P}(x)\)</span>表示。<span class="math inline">\(\mathscr{P}(x)=\left\{E:E\subset X\right\}\)</span>全文中的<span class="math inline">\(\subset\)</span>包含关系均表示弱包含，即允许两集合相等（即不限于真子集）。</p>
+<p>如果<span class="math inline">\(\epsilon\)</span>表示一族集合，我们将其并集与交集表示如下：</p>
+<p><span class="math inline">\(\bigcup_{E\in\epsilon}E=\left\{x:x\in E对于某些E\in\epsilon\right\}\)</span></p>
+<p><span class="math inline">\(\bigcap_{E\in\epsilon}E=\left\{x:x\in E 对于所有E\in\epsilon\right\}\)</span></p>
+<p>通常考虑指标化的集族会更为方便，</p>
+<p><span class="math inline">\(\epsilon=\left\{E_{\alpha}:\alpha\in A\right\}=\left\{E_{\alpha}\right\}_{\alpha\in A}\)</span></p>
+<p>相应地，并集与交集可表示为：</p>
+<p><span class="math inline">\(\bigcup_{\alpha\in A}E_{\alpha}\)</span> ，<span class="math inline">\(\bigcap_{\alpha\in A}E_{\alpha}\)</span>。</p>
+<p>如果</p>
 
       
     </div>
@@ -364,15 +378,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/08/18/一些观点/" rel="next" title="一些常见观点">
+                <i class="fa fa-chevron-left"></i> 一些常见观点
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/31/不求甚解学经济-不动点定理（四）Kakutani-s-Fixed-Point-Theorem/" rel="prev" title="不求甚解学经济 不动点定理（四）Kakutani's Fixed Point Theorem">
-                不求甚解学经济 不动点定理（四）Kakutani's Fixed Point Theorem <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -492,7 +506,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#分析学"><span class="nav-number">1.</span> <span class="nav-text">分析学：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#拓扑学"><span class="nav-number">2.</span> <span class="nav-text">拓扑学：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#杂感"><span class="nav-number">3.</span> <span class="nav-text">杂感：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#序言"><span class="nav-number">1.</span> <span class="nav-text">序言</span></a></li></ol></div>
             
 
           </div>
